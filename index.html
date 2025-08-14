@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gourmet Haven - Fine Dining Restaurant</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="fas fa-utensils me-2"></i>Gourmet Haven
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#menu">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#reservation">Reservations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#feedback">Feedback</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-overlay">
+            <div class="container text-center">
+                <h1 class="display-1 text-white mb-4">Welcome to Gourmet Haven</h1>
+                <p class="lead text-white mb-4">Experience culinary excellence in every bite</p>
+                <a href="#reservation" class="btn btn-primary btn-lg me-3">Book a Table</a>
+                <a href="#menu" class="btn btn-outline-light btn-lg">View Menu</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h2 class="section-title">Our Story</h2>
+                    <p class="lead">Founded in 2010, Gourmet Haven has been serving exceptional cuisine in a warm, inviting atmosphere. Our passion for food and commitment to quality has made us a beloved destination for food enthusiasts.</p>
+                    <p>We source the finest ingredients from local farmers and artisans, ensuring every dish tells a story of tradition and innovation.</p>
+                </div>
+                <div class="col-lg-6">
+                    <img src="assets/img15.jpeg" alt="Restaurant Interior" class="img-fluid rounded shadow">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">Our Menu</h2>
+            
+            <!-- Menu Categories -->
+            <ul class="nav nav-pills justify-content-center mb-5" id="menuTabs" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="appetizers-tab" data-bs-toggle="pill" data-bs-target="#appetizers" type="button" role="tab">Appetizers</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="maincourse-tab" data-bs-toggle="pill" data-bs-target="#maincourse" type="button" role="tab">Main Course</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="desserts-tab" data-bs-toggle="pill" data-bs-target="#desserts" type="button" role="tab">Desserts</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="beverages-tab" data-bs-toggle="pill" data-bs-target="#beverages" type="button" role="tab">Beverages</button>
+                </li>
+            </ul>
+
+            <!-- Menu Content -->
+            <div class="tab-content" id="menuContent">
+                <!-- Appetizers -->
+                <div class="tab-pane fade show active" id="appetizers" role="tabpanel">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="menu-item">
+                                <img src="assets/img1.jpeg" alt="Bruschetta" class="img-fluid rounded">
+                                <div class="menu-item-content">
+                                    <h5>Bruschetta</h5>
+                                    <p>Fresh tomatoes, basil, and mozzarella on toasted bread</p>
+                                    <span class="price">$12</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="menu-item">
+                                <img src="assets/img2.jpeg" alt="Spring Rolls" class="img-fluid rounded">
+                                <div class="menu-item-content">
+                                    <h5>Spring Rolls</h5>
+                                    <p>Crispy vegetable spring rolls with sweet chili sauce</p>
+                                    <span class="price">$10</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="menu-item">
+                                <img src="assets/img3.jpeg" alt="Calamari" class="img-fluid rounded">
+                                <div class="menu-item-content">
+                                    <h5>Calamari</h5>
+                                    <p>Lightly fried calamari with lemon aioli</p>
+                                    <span class="price">$16</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Main Course -->
+                <div class="tab-pane fade" id="maincourse" role="tabpanel">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="menu-item">
+                                <img src="assets/img4.jpeg" alt="Grilled Salmon" class="img-fluid rounded">
+                                <div class="menu-item-content">
+                                    <h5>Grilled Salmon</h5>
+                                    <p>Atlantic salmon with seasonal vegetables and herb butter</p>
+                                    <span class="price">$32</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="menu-item">
+                                <img src="assets/img5.jpeg" alt="Beef Tenderloin" class="img-fluid rounded">
+                                <div class="menu-item-content">
+                                    <h5>Beef Tenderloin</h5>
+                                    <p>8oz tenderloin with roasted potatoes and red wine reduction</p>
+                                    <span class="price">$38</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="menu-item">
+                                <img src="assets/img6.jpeg" alt="Pasta Carbonara" class="img-fluid rounded">
+                                <div class="menu-item-content">
+                                    <h5>Pasta Carbonara</h5>
+                                    <p>Spaghetti with pancetta, eggs, and parmesan cheese</p>
+                                    <span class="price">$24</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Desserts -->
+                <div class="tab-pane fade" id="desserts" role="tabpanel">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="menu-item">
+                                <img src="assets/img7.jpeg" alt="Chocolate Lava Cake" class="img-fluid rounded">
+                                <div class="menu-item-content">
+                                    <h5>Chocolate Lava Cake</h5>
+                                    <p>Warm chocolate cake with molten center and vanilla ice cream</p>
+                                    <span class="price">$14</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="menu-item">
+                                <img src="assets/img8.jpeg" alt="Tiramisu" class="img-fluid rounded">
+                                <div class="menu-item-content">
+                                    <h5>Tiramisu</h5>
+                                    <p>Classic Italian dessert with coffee-soaked ladyfingers</p>
+                                    <span class="price">$12</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="menu-item">
+                                <img src="assets/img9.jpeg" alt="Crème Brûlée" class="img-fluid rounded">
+                                <div class="menu-item-content">
+                                    <h5>Crème Brûlée</h5>
+                                    <p>Vanilla custard with caramelized sugar crust</p>
+                                    <span class="price">$13</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Beverages -->
+                <div class="tab-pane fade" id="beverages" role="tabpanel">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="menu-item">
+                                <img src="assets/img10.jpeg" alt="Signature Cocktails" class="img-fluid rounded">
+                                <div class="menu-item-content">
+                                    <h5>Signature Cocktails</h5>
+                                    <p>Handcrafted cocktails using premium spirits and fresh ingredients</p>
+                                    <span class="price">$16</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="menu-item">
+                                <img src="assets/img11.jpeg" alt="Wine Selection" class="img-fluid rounded">
+                                <div class="menu-item-content">
+                                    <h5>Wine Selection</h5>
+                                    <p>Curated wine list featuring local and international selections</p>
+                                    <span class="price">$12-45</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="menu-item">
+                                <img src="assets/img12.jpeg" alt="Artisan Coffee" class="img-fluid rounded">
+                                <div class="menu-item-content">
+                                    <h5>Artisan Coffee</h5>
+                                    <p>Premium coffee and espresso drinks</p>
+                                    <span class="price">$6</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Additional Food Gallery Section -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">More Culinary Delights</h2>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="menu-item">
+                        <img src="assets/img13.jpeg" alt="Special Dish" class="img-fluid rounded">
+                        <div class="menu-item-content">
+                            <h5>Chef's Special</h5>
+                            <p>Our chef's daily creation featuring seasonal ingredients</p>
+                            <span class="price">$28</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="menu-item">
+                        <img src="assets/img14.jpeg" alt="Gourmet Creation" class="img-fluid rounded">
+                        <div class="menu-item-content">
+                            <h5>Gourmet Creation</h5>
+                            <p>Artistically plated dish with premium ingredients</p>
+                            <span class="price">$34</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="menu-item">
+                        <img src="assets/img15.jpeg" alt="Restaurant Ambiance" class="img-fluid rounded">
+                        <div class="menu-item-content">
+                            <h5>Dining Experience</h5>
+                            <p>Enjoy our elegant atmosphere and exceptional service</p>
+                            <span class="price">Experience</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">Our Services</h2>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="service-card text-center">
+                        <div class="service-icon mb-3">
+                            <i class="fas fa-calendar-check fa-3x text-primary"></i>
+                        </div>
+                        <h4>Table Reservations</h4>
+                        <p>Book your perfect table for any occasion. We offer flexible reservation times and special arrangements for groups.</p>
+                        <a href="#reservation" class="btn btn-outline-primary">Book Now</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="service-card text-center">
+                        <div class="service-icon mb-3">
+                            <i class="fas fa-truck fa-3x text-primary"></i>
+                        </div>
+                        <h4>Delivery & Takeout</h4>
+                        <p>Enjoy our delicious food at home with our convenient delivery and takeout services. Available for lunch and dinner.</p>
+                        <a href="#contact" class="btn btn-outline-primary">Order Now</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="service-card text-center">
+                        <div class="service-icon mb-3">
+                            <i class="fas fa-users fa-3x text-primary"></i>
+                        </div>
+                        <h4>Private Events</h4>
+                        <p>Host your special events in our private dining rooms. Perfect for corporate events, celebrations, and intimate gatherings.</p>
+                        <a href="#contact" class="btn btn-outline-primary">Inquire</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservation Section -->
+    <section id="reservation" class="py-5">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">Make a Reservation</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <form id="reservationForm" class="reservation-form">
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="name" class="form-label">Full Name *</label>
+                                <input type="text" class="form-control" id="name" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="email" class="form-label">Email *</label>
+                                <input type="email" class="form-control" id="email" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="phone" class="form-label">Phone Number</label>
+                                <input type="tel" class="form-control" id="phone">
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="guests" class="form-label">Number of Guests *</label>
+                                <select class="form-select" id="guests" required>
+                                    <option value="">Select...</option>
+                                    <option value="1">1 Guest</option>
+                                    <option value="2">2 Guests</option>
+                                    <option value="3">3 Guests</option>
+                                    <option value="4">4 Guests</option>
+                                    <option value="5">5 Guests</option>
+                                    <option value="6">6+ Guests</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="date" class="form-label">Date *</label>
+                                <input type="date" class="form-control" id="date" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="time" class="form-label">Time *</label>
+                                <select class="form-select" id="time" required>
+                                    <option value="">Select...</option>
+                                    <option value="11:00">11:00 AM</option>
+                                    <option value="11:30">11:30 AM</option>
+                                    <option value="12:00">12:00 PM</option>
+                                    <option value="12:30">12:30 PM</option>
+                                    <option value="17:00">5:00 PM</option>
+                                    <option value="17:30">5:30 PM</option>
+                                    <option value="18:00">6:00 PM</option>
+                                    <option value="18:30">6:30 PM</option>
+                                    <option value="19:00">7:00 PM</option>
+                                    <option value="19:30">7:30 PM</option>
+                                    <option value="20:00">8:00 PM</option>
+                                    <option value="20:30">8:30 PM</option>
+                                    <option value="21:00">9:00 PM</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="specialRequests" class="form-label">Special Requests</label>
+                            <textarea class="form-control" id="specialRequests" rows="3" placeholder="Any dietary restrictions or special requests?"></textarea>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-primary btn-lg">Book Reservation</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Feedback Section -->
+    <section id="feedback" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">Share Your Experience</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <form id="feedbackForm" class="feedback-form">
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="feedbackName" class="form-label">Name *</label>
+                                <input type="text" class="form-control" id="feedbackName" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="feedbackEmail" class="form-label">Email *</label>
+                                <input type="email" class="form-control" id="feedbackEmail" required>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="rating" class="form-label">Rating *</label>
+                            <div class="rating-stars">
+                                <input type="radio" name="rating" value="5" id="star5">
+                                <label for="star5"><i class="fas fa-star"></i></label>
+                                <input type="radio" name="rating" value="4" id="star4">
+                                <label for="star4"><i class="fas fa-star"></i></label>
+                                <input type="radio" name="rating" value="3" id="star3">
+                                <label for="star3"><i class="fas fa-star"></i></label>
+                                <input type="radio" name="rating" value="2" id="star2">
+                                <label for="star2"><i class="fas fa-star"></i></label>
+                                <input type="radio" name="rating" value="1" id="star1">
+                                <label for="star1"><i class="fas fa-star"></i></label>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="feedbackMessage" class="form-label">Your Message *</label>
+                            <textarea class="form-control" id="feedbackMessage" rows="5" placeholder="Tell us about your experience..." required></textarea>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-primary btn-lg">Submit Feedback</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">Contact Us</h2>
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <div class="contact-info">
+                        <h4>Get in Touch</h4>
+                        <p><i class="fas fa-map-marker-alt me-2"></i> 123 Gourmet Street, Foodie City, FC 12345</p>
+                        <p><i class="fas fa-phone me-2"></i> (555) 123-4567</p>
+                        <p><i class="fas fa-envelope me-2"></i> info@gourmethaven.com</p>
+                        
+                        <h5 class="mt-4">Hours of Operation</h5>
+                        <p><strong>Lunch:</strong> Tuesday - Sunday, 11:00 AM - 2:30 PM</p>
+                        <p><strong>Dinner:</strong> Tuesday - Sunday, 5:00 PM - 10:00 PM</p>
+                        <p><strong>Closed:</strong> Mondays</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="contact-form">
+                        <h4>Send us a Message</h4>
+                        <form id="contactForm">
+                            <div class="mb-3">
+                                <input type="text" class="form-control" placeholder="Your Name" required>
+                            </div>
+                            <div class="mb-3">
+                                <input type="email" class="form-control" placeholder="Your Email" required>
+                            </div>
+                            <div class="mb-3">
+                                <input type="text" class="form-control" placeholder="Subject">
+                            </div>
+                            <div class="mb-3">
+                                <textarea class="form-control" rows="4" placeholder="Your Message" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Gourmet Haven</h5>
+                    <p>Experience culinary excellence in every bite.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <div class="social-links">
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook fa-lg"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-instagram fa-lg"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-twitter fa-lg"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-yelp fa-lg"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="text-center">
+                <p>&copy; 2024 Gourmet Haven. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 
